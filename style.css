@@ -1,0 +1,59 @@
+.hide {
+    display: none;
+}
+@media (min-width: 300px) and (max-width: 550px) {
+    header {
+        text-align: center;
+        background-color: #9fc5e8;
+        border-style: solid;
+        font-family: "Playpen Sans", cursive;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+    
+    }
+    /*.fa-briefcase {
+
+    }*/
+    .btn {
+        text-align: center;
+        margin-top: 10px;
+        font-family: "Playpen Sans", cursive;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+    }
+    .omMigSida {
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        font-family: "Playpen Sans", cursive;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+    }
+    .fa-leaf {
+        padding: 5rem;
+        margin-top: -10rem;
+        width: 10px;
+        height: 10px;
+    }
+    #bildpåmig {
+        width: 210px;
+        height: 279px;
+        margin-top: -3rem;
+    }
+    .Start {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        margin-left: 43%;
+    }
+    .StartKnappArbetserfarenhet {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        margin-left: 43%;
+    }
+
+}
