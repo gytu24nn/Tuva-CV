@@ -1,59 +1,122 @@
 .hide {
     display: none;
 }
-@media (min-width: 300px) and (max-width: 550px) {
-    header {
-        text-align: center;
-        background-color: #9fc5e8;
-        border-style: solid;
-        font-family: "Playpen Sans", cursive;
-        font-optical-sizing: auto;
-        font-weight: weight;
-        font-style: normal;
-    
-    }
-    /*.fa-briefcase {
 
-    }*/
-    .btn {
+#btn {
+    display: none;
+}
+
+.omMigSida {
+    display: block;
+}
+
+.ArbetslivserfarenheterSida {
+    display: block;
+}
+
+.Start {
+    display: none;
+}
+
+.StartKnappArbetserfarenhet {
+    display: none;
+}
+
+header {
+    text-align: center;
+    background-color: #9fc5e8;
+    border-style: solid;
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    width: 100%;
+}
+.clock {
+    font-family: 'Digital-7 Mono', sans-serif;
+    font-family: 'Digital-7', sans-serif;
+    font-family: 'Digital-7 Italic', sans-serif;
+    border: dotted;
+    border-radius: 15%;
+    background-color: #9fc5e8;
+    width: 300px;
+    font-size: 50px;
+    text-align: center;
+    display: block;
+    width: 100%; /* Ändra bredd till procent */
+    max-width: 250px; /* Behåll en maxbredd */
+    margin: 0 auto; /* Centrerar klockan */
+    margin-top: 2rem;
+    justify-content: center; /* Centrerar innehåll horisontellt */
+}
+main {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    
+}
+#bildpåmig {
+    width: 200px;
+    height: 270;
+}
+.omMigSida {
+    width: 20%;
+}
+.vadJagLärtMig {
+    order: 2;
+}
+.ArbetslivserfarenheterSida {
+    order: 3;
+    width: 20%;
+}
+
+
+@media (min-width: 100px) and (max-width: 700px) {
+    #btn {
+        display: block;
         text-align: center;
-        margin-top: 10px;
-        font-family: "Playpen Sans", cursive;
-        font-optical-sizing: auto;
-        font-weight: weight;
-        font-style: normal;
+        margin-top: 1rem;
+    }
+
+    button {
+        border: solid;
+        background-color: #9fc5e8;
+    }
+
+    .hide {
+        display: none;
     }
     .omMigSida {
         text-align: center;
-        width: 90%;
-        margin: auto;
         font-family: "Playpen Sans", cursive;
         font-optical-sizing: auto;
         font-weight: weight;
         font-style: normal;
-    }
-    .fa-leaf {
-        padding: 5rem;
-        margin-top: -10rem;
-        width: 10px;
-        height: 10px;
-    }
-    #bildpåmig {
-        width: 210px;
-        height: 279px;
-        margin-top: -3rem;
+        width: 90%;
+        margin: auto;
+        
     }
     .Start {
         display: flex;
         flex-direction: column;
         margin-top: 1rem;
-        margin-left: 43%;
+        margin: 0 auto;
     }
     .StartKnappArbetserfarenhet {
         display: flex;
         flex-direction: column;
         margin-top: 1rem;
-        margin-left: 43%;
+        margin: 0 auto;
     }
-
+    .ArbetslivserfarenheterSida {
+        text-align: center;
+        font-family: "Playpen Sans", cursive;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        width: 65%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
 }
