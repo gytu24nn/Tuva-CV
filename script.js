@@ -9,7 +9,7 @@ const startBtnOmMig = document.querySelector(".Start");
 const startBtnArbetserfarenhet = document.querySelector(".StartKnappArbetserfarenhet");
 
 let clock = document.querySelector(".clock");
-
+let paragrafVadJagKan = document.querySelector(".paragrafVadJagKan");
 /*Här får jag en bild att ändras till en annan bild med hjälp av att först deklarera en variabel från HTML med id */
 let imageElement = document.getElementById("bildpåmig");
 let source = "Tidning";
@@ -30,22 +30,26 @@ BtnOmMig.addEventListener("click", () => {
     omMigPage.classList.remove("hide");
     arbetslivserfarenheterPage.classList.add("hide");
     clock.classList.add("hide");
+    paragrafVadJagKan.classList.add("hide");
     
 })
 BtnArbetslivserfarenheter.addEventListener("click", () => {
     arbetslivserfarenheterPage.classList.remove("hide");
     omMigPage.classList.add("hide");
     clock.classList.add("hide");
+    paragrafVadJagKan.classList.add("hide");
 })
 startBtnOmMig.addEventListener("click", () => {
     arbetslivserfarenheterPage.classList.add("hide");
     omMigPage.classList.add("hide");
     clock.classList.remove("hide");
+    paragrafVadJagKan.classList.remove("hide");
 })
 startBtnArbetserfarenhet.addEventListener("click", () => {
     arbetslivserfarenheterPage.classList.add("hide");
     omMigPage.classList.add("hide");
     clock.classList.remove("hide");
+    paragrafVadJagKan.classList.remove("hide");
 })
 
 let hrs = document.getElementById("hrs"); 

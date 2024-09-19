@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .hide {
     display: none;
 }
@@ -8,10 +13,12 @@
 
 .omMigSida {
     display: block;
+    margin-top: 2rem;
 }
 
 .ArbetslivserfarenheterSida {
     display: block;
+    margin-top: 2rem;
 }
 
 .Start {
@@ -54,11 +61,11 @@ main {
     justify-content: space-around;
     width: 90%;
     margin: auto;
-    
 }
 #bildpåmig {
     width: 200px;
     height: 270;
+    margin-top: 1rem;
 }
 .omMigSida {
     width: 20%;
@@ -69,6 +76,12 @@ main {
 .ArbetslivserfarenheterSida {
     order: 3;
     width: 20%;
+}
+.paragrafVadJagKan {
+    order: 2;
+    text-align: center;
+    width: 20rem;
+    margin-top: 2rem;
 }
 
 
@@ -95,6 +108,7 @@ main {
         font-style: normal;
         width: 90%;
         margin: auto;
+        margin-top: 1rem;
         
     }
     .Start {
@@ -102,12 +116,14 @@ main {
         flex-direction: column;
         margin-top: 1rem;
         margin: 0 auto;
+        margin-top: 1rem;
     }
     .StartKnappArbetserfarenhet {
         display: flex;
         flex-direction: column;
         margin-top: 1rem;
         margin: 0 auto;
+        margin-top: 1rem;
     }
     .ArbetslivserfarenheterSida {
         text-align: center;
@@ -118,5 +134,10 @@ main {
         width: 65%;
         margin: 0 auto;
         flex-direction: column;
+        margin-top: 2rem;
+    }
+    .paragrafVadJagKan {
+        text-align: center;
+        margin-top: 2rem;
     }
 }
