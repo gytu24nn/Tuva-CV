@@ -15,16 +15,25 @@
 </head>
 
 <body>
+    <!--Här skapar jag en header som ska visas hela tiden på hemsidan. I den står det mitt namn, vad jag pluggar och en ikon 
+    på en väska.-->
     <header>
         <h2>Tuva Gyllensten</h2>
         <i class="fa-solid fa-briefcase"></i>
-        <h3>student in Webbutveckling.net</h3>
+        <h3>studerar Webbutveckling.net <br> Campus Värnamo</h3>
     </header>
+    <!--I den här diven så skapar jag knapparna som jag sen CSS i designen för mindre gör jag så dessa knappar syns och
+    bara på de mindre skärmarna. -->
     <div id="btn">
         <button id="OmMig">Om Mig</button>
         <button id="Arbetslivserfarenheter">Arbetslivserfarenheter</button>
     </div>
+    <!--Denna main var jag tvungen att göra för få designen att fungera på desktopen för fick inte min om mig och 
+    arbetsliverfarenheter text att vara där jag ville annars.-->
     <main>
+        <!--Här gör jag den första diven ska visa det jag lärt mig och den ska visas hela tiden om man inte användaren väljer att
+        visa något annat. Denna kommer jag sen fylla på med fler saker när jag lärt mig fler, men så länge valde jag att lägga
+        till min klocka jag skapat.-->
         <div class="vadJagLärtMig">
             <div class="clock">
                 <span id="hrs">00</span>
@@ -35,6 +44,11 @@
             </div>
             <p class="paragrafVadJagKan">Just nu kan jag grunderna i CSS,HTML och javascript och mycket av de grejerna jag kan har jag använt för att göra detta CV.</p>
         </div>
+            <!--Här skapas nästa div inte syns från början i mobil sidan men den syns efter man tryckt på en knapp. För att 
+            det till att funka valde jag att använda mig av hide som jag aktivierar och stänger av med hjälp av javascript och
+            CSS. i denna div skrev jag ut om mig själv lade till en bild och om man trycker på den byts den ut till en annan. Sen har lade jag även 
+            till en liten ikon på ett löv som en liten detalj. Sen när man tryckt på om mig knappen på mobilen så kommer det upp en tillbaka knapp 
+            som tar en tillbaka till det som visades först.-->
             <div class="omMigSida hide">
                 <h3>Om Mig:</h3>
                 <p> Hej jag heter Tuva Gyllensten och i augusti 2024 började jag plugga Webbutveckling.net.
@@ -46,23 +60,44 @@
                     med mig mycket av min kreativa sida. Vilket jag kan ha stor nytta av i denna branchen som
                     Webbutvecklare.
                 </p>
-                <!--<i class="fa-solid fa-leaf fa-xl"></i>-->
+                <i class="fa-solid fa-leaf fa-xl"></i> <br>
                 <img id="bildpåmig" src="bilder/bildpåmigtidning.jpg" alt="Foto på Tuva">
-                <button class="Start">Start</button>
+                <p>click me!</p>
+                <button class="Start">Tillbaka</button>
             </div>
+            <!--Här skapas den sista diven som också använder hide för att när man trycker på en knapp i mobil skärmen så ska de visas men 
+            när man är på en desktop skärm så visas de inga knappar och allt ska visas från början. I denna div skrivs det ut vad jag arbetat med innan 
+            och vad jag kan för språk. Även här skapas en tillbaka knapp som fungerar precis likadant som den andra i den förra diven. -->
         <div class="ArbetslivserfarenheterSida hide">
             <h3>Arbetslivserfarenheter:</h3>
             <ul>
-                <li>Sommarjobb 2021: Vandalorum</li>
-                <li>Sommarjobb 2022: Vandalorum</li>
-                <li>Jobb 2024 sommar: Kockums Jernverk</li>
+                <li>Sommarjobb 2021: Vandalorum, recpetionist</li>
+                <li>Sommarjobb 2022: Vandalorum, recpetionist</li>
+                <li>Jobb 2024 sommar: Kockums Jernverk, hjälpte till med deras hemsida</li>
             </ul>
-            <button class="StartKnappArbetserfarenhet">Start</button>
+            
+            <div class="språk">
+                <h3>Språk:</h3>
+                <ul>
+                    <li class="li">Svenska</li>
+                    <li class="li">engelska</li>
+                </ul>
+            </div>
+            <button class="StartKnappArbetserfarenhet">Tillbaka</button>
         </div>
     </main>
-    <footer>
-        <h4>Kontakt:</h4>
-        
+    <!--Här skapar jag en footer som ska visas hela tiden samma som header och i denna finns mina kontakt uppgifter och github.
+    Om man trycker på ikonerna så kan man maila eller ringa. -->
+    <footer id="footer">
+        <h5>Kontakt:</h5>
+        <div class="kontakt">
+            <a href="mailto:tuvagyllensten@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a id="phone" href="tel:+46725441299"><i class="fa-solid fa-phone"></i></a>
+            <a href="https://github.com/gytu24nn" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+
+
+
     </footer>
 
 </body>

@@ -1,34 +1,10 @@
+/*Här ändrar jag designen för hela sidan för att få min border att gå ända ut och för att de ska bli mer snyggt.*/
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.hide {
-    display: none;
-}
-
-#btn {
-    display: none;
-}
-
-.omMigSida {
-    display: block;
-    margin-top: 2rem;
-}
-
-.ArbetslivserfarenheterSida {
-    display: block;
-    margin-top: 2rem;
-}
-
-.Start {
-    display: none;
-}
-
-.StartKnappArbetserfarenhet {
-    display: none;
-}
-
+/*Här skapar jag designen för header vilket jag väljer att lägga utanför @media för att den ska se likadan ut på alla skärmstorlekar.*/
 header {
     text-align: center;
     background-color: #9fc5e8;
@@ -39,6 +15,8 @@ header {
     font-style: normal;
     width: 100%;
 }
+/*Här är designen för klockan som också ligger utan för @media för att den ska också se likadan ut på alla skärmar. 
+Först lägger jag dit typsnitt och sen hur den ska ser ut runt om. sen är mycket av koden för att få den i mitten på skärmen.*/
 .clock {
     font-family: 'Digital-7 Mono', sans-serif;
     font-family: 'Digital-7', sans-serif;
@@ -56,36 +34,105 @@ header {
     margin-top: 2rem;
     justify-content: center; /* Centrerar innehåll horisontellt */
 }
+/*Här är koden för main och det är den som är för alla skärmstorlekar. Här ändrar jag mest var texten ska vara och hur den ska se ut.*/
 main {
     display: flex;
     justify-content: space-around;
     width: 90%;
     margin: auto;
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
+/*Här ändrar jag storlek på bilden och hur långt ner den ska vara, och den ska också var likadan oberonde på hur stor skärmen blir.*/
 #bildpåmig {
     width: 200px;
     height: 270;
     margin-top: 1rem;
 }
-.omMigSida {
-    width: 20%;
-}
-.vadJagLärtMig {
-    order: 2;
-}
-.ArbetslivserfarenheterSida {
-    order: 3;
-    width: 20%;
-}
-.paragrafVadJagKan {
-    order: 2;
-    text-align: center;
-    width: 20rem;
+/*Här flyttar jag ner ikonen bladet mellan om mig texten och foto.*/
+.fa-leaf {
     margin-top: 2rem;
 }
+/*Här får jag länkar som är ikoner att vara svarta.*/
+a, :visited {
+    color: black;
+}
+/*Här fick jag ge min språk lista en klass som jag döpte till li för att tabort prickarna för annars tog det bort det på den andra listan också vilket 
+jag inte ville.*/
+.li {
+    list-style-type: none;
+}
 
+/*Här börjar designen för desktopen. */
+@media (min-width: 701px) {
+    /*#btn, .start och .startknapparbetserfarenhet tarbort dessa knappar för de vill jag inte ha i desktopen. Sen ommigsida och arbetslivserfarenhetsida 
+    skriver jag block på istället det är för att det ska visas.*/
+    #btn {
+        display: none;
+    }
+    
+    .omMigSida {
+        display: block;
+        margin-top: 2rem;
+    }
+    
+    .ArbetslivserfarenheterSida {
+        display: block;
+        margin-top: 2rem;
+    }
+    
+    .Start {
+        display: none;
+    }
+    
+    .StartKnappArbetserfarenhet {
+        display: none;
+    }
+    /*Här bestämmer jag i vilken ordning de ska visas i med hjälp av flex box för kunde inte ändra ordningen i HTML.*/
+    .omMigSida {
+        order: 1;
+        width: 20%;
+        text-align: center;
+    }
+    /*Här bestämmer jag i vilken ordning de ska visas i med hjälp av flex box för kunde inte ändra ordningen i HTML.*/
+    .vadJagLärtMig {
+        order: 2;
+    }
+    /*Här bestämmer jag i vilken ordning de ska visas i med hjälp av flex box för kunde inte ändra ordningen i HTML.*/
+    .ArbetslivserfarenheterSida {
+        order: 3;
+        width: 20%;
+        text-align: center;
+    }
+    /*Här bestämmer jag i vilken ordning de ska visas i med hjälp av flex box för kunde inte ändra ordningen i HTML.*/
+    .paragrafVadJagKan {
+        order: 2;
+        text-align: center;
+        width: 20rem;
+        margin-top: 2rem;
+    }
+    
+    .kontakt {
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 2rem;
+    }
+    #footer {
+        text-align: center;
+        font-family: "Playpen Sans", cursive;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+    }
+    .språk {
+        margin-top: 1rem;
+    }
+}
 
-@media (min-width: 100px) and (max-width: 700px) {
+@media (min-width: 150px) and (max-width: 700px) {
     #btn {
         display: block;
         text-align: center;
@@ -96,7 +143,6 @@ main {
         border: solid;
         background-color: #9fc5e8;
     }
-
     .hide {
         display: none;
     }
@@ -136,8 +182,23 @@ main {
         flex-direction: column;
         margin-top: 2rem;
     }
+    .språk {
+        width: 65%;
+        margin: 0 auto;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
     .paragrafVadJagKan {
         text-align: center;
         margin-top: 2rem;
+    }
+    #footer {
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        font-family: "Playpen Sans", cursive;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
     }
 }
