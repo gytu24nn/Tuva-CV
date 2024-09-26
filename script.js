@@ -37,6 +37,19 @@ fetch("https://api.github.com/users/gytu24nn/repos")
    
    
 })
+fetch("db.json")
+.then(function(response){
+    return response.json();
+})
+.then(function(json){
+    json.forEach(work => {
+        let ul = document.getElementById("ul");
+        let li = document.createElement("li");
+        li.innerHTML = `${work.workName}`;
+
+        ul.appendChild(li);
+    })
+})
 
 /*Här får jag en bild att ändras till en annan bild med hjälp av att först deklarera en variabel från HTML med id.
 Sen använder jag mig av en switch sats som kontrollerar vilket bild det är och byter ut den till andra. */
@@ -45,11 +58,11 @@ let source = "Tidning";
 imageElement.addEventListener("click", function swapImage() {
     switch (source) {
         case "Tidning":
-            imageElement.src = "/bilder/studentbildpåmig.jpg";
+            imageElement.src = "/bilder/studentPicture.jpg";
             source = "student";
             break;
         case "student":
-            imageElement.src = "/bilder/bildpåmigtidning.jpg";
+            imageElement.src = "/bilder/pictureNewPaper.jpg";
             source = "Tidning";
             break;
     }
