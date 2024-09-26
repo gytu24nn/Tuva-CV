@@ -14,6 +14,29 @@ const startBtnArbetserfarenhet = document.querySelector(".StartKnappArbetserfare
 tabort hide så att de inte syns när användaren vill se om mig sidan tex och sen när man vill tillbaka så ska de synas igen. */
 let clock = document.querySelector(".clock");
 let paragrafVadJagKan = document.querySelector(".paragrafVadJagKan");
+let githubRepos = document.getElementById("githubRepos")
+
+fetch("https://api.github.com/users/gytu24nn/repos")
+.then(function(response) {
+    return response.json();
+})
+.then(function(githubReposData) {
+    
+        console.log("Github API: ", githubReposData );
+
+        githubReposData.forEach((repo) => {
+            console.log(repo)
+            let repoDiv = document.createElement('a')
+            repoDiv.classList.add('repoClass')
+
+            repoDiv.innerHTML = repo.name
+            repoDiv.href = repo.html_url
+
+            githubRepos.appendChild(repoDiv)
+        })
+   
+   
+})
 
 /*Här får jag en bild att ändras till en annan bild med hjälp av att först deklarera en variabel från HTML med id.
 Sen använder jag mig av en switch sats som kontrollerar vilket bild det är och byter ut den till andra. */
@@ -38,6 +61,7 @@ BtnOmMig.addEventListener("click", () => {
     arbetslivserfarenheterPage.classList.add("hide");
     clock.classList.add("hide");
     paragrafVadJagKan.classList.add("hide");
+    githubRepos.classList.add("hide");
     
 })
 BtnArbetslivserfarenheter.addEventListener("click", () => {
@@ -45,18 +69,21 @@ BtnArbetslivserfarenheter.addEventListener("click", () => {
     omMigPage.classList.add("hide");
     clock.classList.add("hide");
     paragrafVadJagKan.classList.add("hide");
+    githubRepos.classList.add("hide");
 })
 startBtnOmMig.addEventListener("click", () => {
     arbetslivserfarenheterPage.classList.add("hide");
     omMigPage.classList.add("hide");
     clock.classList.remove("hide");
     paragrafVadJagKan.classList.remove("hide");
+    githubRepos.classList.remove("hide");
 })
 startBtnArbetserfarenhet.addEventListener("click", () => {
     arbetslivserfarenheterPage.classList.add("hide");
     omMigPage.classList.add("hide");
     clock.classList.remove("hide");
     paragrafVadJagKan.classList.remove("hide");
+    githubRepos.classList.remove("hide");
 })
 
 /*Här är koden för klockan och först hämtar jag elementen med id från HTML och sen med javascript så får jag klockan att skrivas ut 
@@ -67,6 +94,4 @@ setInterval(() => {
     hrs.innerHTML = (currentTime.getHours()<10?"0":"") + currentTime.getHours();
     min.innerHTML = currentTime.getMinutes();
     sec.innerHTML = currentTime.getSeconds();
-
-
 },1000)

@@ -64,6 +64,44 @@ jag inte ville.*/
 .li {
     list-style-type: none;
 }
+/*Här bestämmer jag i vilken ordning de ska visas i med hjälp av flex box för kunde inte ändra ordningen i HTML.*/
+.paragrafVadJagKan {
+    order: 2;
+    text-align: center;
+    width: 20rem;
+    margin-top: 2rem;
+    display: block;
+    width: 100%; /* Ändra bredd till procent */
+    max-width: 250px; /* Behåll en maxbredd */
+    margin: 0 auto; /* Centrerar klockan */
+    margin-top: 2rem;
+    justify-content: center; /* Centrerar innehåll horisontellt */
+
+}
+.repoClass {
+    text-align: center;
+    display: block;
+    width: 100%; /* Ändra bredd till procent */
+    max-width: 250px; /* Behåll en maxbredd */
+    margin: 0 auto; /* Centrerar klockan */
+    margin-top: 2rem;
+    justify-content: center; /* Centrerar innehåll horisontellt */
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    margin-top: 15px;
+    
+    
+}
+a, a:visited{
+    text-decoration: none; 
+    
+ 
+}
+a:hover {
+    color: #48a1f4;
+}
 
 /*Här börjar designen för desktopen. */
 @media (min-width: 701px) {
@@ -105,13 +143,6 @@ jag inte ville.*/
         order: 3;
         width: 20%;
         text-align: center;
-    }
-    /*Här bestämmer jag i vilken ordning de ska visas i med hjälp av flex box för kunde inte ändra ordningen i HTML.*/
-    .paragrafVadJagKan {
-        order: 2;
-        text-align: center;
-        width: 20rem;
-        margin-top: 2rem;
     }
     
     .kontakt {
