@@ -20,21 +20,23 @@
     <header>
         <h2>Tuva Gyllensten</h2>
         <i class="fa-solid fa-briefcase"></i>
-        <h3>studerar Webbutveckling.net <br> Campus Värnamo</h3>
+        <h3>studying Webbutveckling.net <br> Campus Värnamo</h3>
     </header>
+
     <!--I den här diven så skapar jag knapparna som jag sen CSS i designen för mindre gör jag så dessa knappar syns och
     bara på de mindre skärmarna. -->
     <div id="btn">
-        <button id="OmMig">Om Mig</button>
-        <button id="Arbetslivserfarenheter">Arbetslivserfarenheter</button>
+        <button id="aboutMeBtn">About me</button>
+        <button id="workExperiencesBtn">Work experience</button>
     </div>
+
     <!--Denna main var jag tvungen att göra för få designen att fungera på desktopen för fick inte min om mig och 
     arbetsliverfarenheter text att vara där jag ville annars.-->
     <main>
         <!--Här gör jag den första diven ska visa det jag lärt mig och den ska visas hela tiden om man inte användaren väljer att
         visa något annat. Denna kommer jag sen fylla på med fler saker när jag lärt mig fler, men så länge valde jag att lägga
         till min klocka jag skapat.-->
-        <div class="vadJagLärtMig">
+        <div class="whatILearned">
             <div class="clock">
                 <span id="hrs">00</span>
                 <span>:</span>
@@ -42,7 +44,7 @@
                 <span>:</span>
                 <span id="sec">00</span>
             </div>
-            <h3 class="paragrafVadJagKan">Github Repos: </h3>
+            <h3 class="h3Header">Github Repos: </h3>
             <div id="githubRepos"></div>
 
         </div>
@@ -51,43 +53,39 @@
             CSS. i denna div skrev jag ut om mig själv lade till en bild och om man trycker på den byts den ut till en annan. Sen har lade jag även 
             till en liten ikon på ett löv som en liten detalj. Sen när man tryckt på om mig knappen på mobilen så kommer det upp en tillbaka knapp 
             som tar en tillbaka till det som visades först.-->
-            <div class="omMigSida hide">
-                <h3>Om Mig:</h3>
-                <p> Hej jag heter Tuva Gyllensten och i augusti 2024 började jag plugga Webbutveckling.net.
-                    Som person är jag en positiv och glad tjej som är bra på att ha många bollar i luften. Innan jag
-                    började plugga har jag
-                    haft sommarjobb på ett museum i Värnamo och hjälpt till att ändra bilder och texter på Kockums
-                    Jernverk hemsida.
-                    På gymnasiet gick jag estet bild och form, från den utbildningen har jag tagit
-                    med mig mycket av min kreativa sida. Vilket jag kan ha stor nytta av i denna branchen som
-                    Webbutvecklare.
+            <div class="aboutMePage hide">
+                <h3>About me:</h3>
+                <p> Hi, my name is Tuva Gyllensten, and in August 2024, I started studying Web Development (.NET). 
+                    I am a positive and cheerful person who is good at multitasking. Before I began studying, 
+                    I worked a summer job at a museum in Värnamo and helped update images and texts on Kockums Jernverk’s website. 
+                    In high school, I studied aesthetics (art and design), and from that education, 
+                    I’ve carried forward a lot of my creative side, which will be very useful in the field of web development.
                 </p>
                 <i class="fa-solid fa-leaf fa-xl"></i> <br>
                 <img id="bildpåmig" src="bilder/pictureNewPaper.jpg" alt="Foto på Tuva">
-                <p>click me!</p>
-                <button class="Start">Tillbaka</button>
+                <button class="startAboutMeBtn">Home</button>
             </div>
             <!--Här skapas den sista diven som också använder hide för att när man trycker på en knapp i mobil skärmen så ska de visas men 
             när man är på en desktop skärm så visas de inga knappar och allt ska visas från början. I denna div skrivs det ut vad jag arbetat med innan 
             och vad jag kan för språk. Även här skapas en tillbaka knapp som fungerar precis likadant som den andra i den förra diven. -->
-        <div class="ArbetslivserfarenheterSida hide">
-            <h3>Arbetslivserfarenheter:</h3>
-            <div id="ul"></div> 
-            <div class="språk">
-                <h3>Språk:</h3>
+        <div class="workExperiencePage hide">
+            <h3>Work Experience:</h3>
+            <div id="listWork"></div> 
+            <div class="language">
+                <h3>Language:</h3>
                 <ul>
-                    <li class="li">Svenska</li>
-                    <li class="li">engelska</li>
+                    <li class="li">Swedish</li>
+                    <li class="li">English</li>
                 </ul>
             </div>
-            <button class="StartKnappArbetserfarenhet">Tillbaka</button>
+            <button class="StartWorkExperienceBtn">Home</button>
         </div>
     </main>
     <!--Här skapar jag en footer som ska visas hela tiden samma som header och i denna finns mina kontakt uppgifter och github.
     Om man trycker på ikonerna så kan man maila eller ringa. -->
     <footer id="footer">
-        <h5>Kontakt:</h5>
-        <div class="kontakt">
+        <h5>Contact:</h5>
+        <div class="contact">
             <a href="mailto:tuvagyllensten@gmail.com"><i class="fa-solid fa-envelope"></i></a>
             <a id="phone" href="tel:+46725441299"><i class="fa-solid fa-phone"></i></a>
             <a href="https://github.com/gytu24nn" target="_blank"><i class="fa-brands fa-github"></i></a>
