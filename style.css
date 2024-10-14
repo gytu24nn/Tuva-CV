@@ -65,7 +65,7 @@ jag inte ville.*/
     list-style-type: none;
 }
 /*Här bestämmer jag i vilken ordning de ska visas i med hjälp av flex box för kunde inte ändra ordningen i HTML.*/
-.paragrafVadJagKan {
+.h3Header {
     order: 2;
     text-align: center;
     width: 20rem;
@@ -111,41 +111,41 @@ a:hover {
         display: none;
     }
     
-    .omMigSida {
+    .aboutMePage {
         display: block;
         margin-top: 2rem;
     }
     
-    .ArbetslivserfarenheterSida {
+    .workExperiencePage {
         display: block;
         margin-top: 2rem;
     }
     
-    .Start {
+    .startAboutMeBtn {
         display: none;
     }
     
-    .StartKnappArbetserfarenhet {
+    .StartWorkExperienceBtn {
         display: none;
     }
     /*Här bestämmer jag i vilken ordning de ska visas i med hjälp av flex box för kunde inte ändra ordningen i HTML.*/
-    .omMigSida {
+    .aboutMePage {
         order: 1;
         width: 20%;
         text-align: center;
     }
     /*Här bestämmer jag i vilken ordning de ska visas i med hjälp av flex box för kunde inte ändra ordningen i HTML.*/
-    .vadJagLärtMig {
+    .whatILearned {
         order: 2;
     }
     /*Här bestämmer jag i vilken ordning de ska visas i med hjälp av flex box för kunde inte ändra ordningen i HTML.*/
-    .ArbetslivserfarenheterSida {
+    .workExperiencePage {
         order: 3;
         width: 20%;
         text-align: center;
     }
     
-    .kontakt {
+    .contact {
         margin: 0 auto;
         justify-content: space-between;
         align-items: center;
@@ -158,7 +158,7 @@ a:hover {
         font-weight: weight;
         font-style: normal;
     }
-    .språk {
+    .language {
         margin-top: 1rem;
     }
 }
@@ -177,7 +177,7 @@ a:hover {
     .hide {
         display: none;
     }
-    .omMigSida {
+    .aboutMePage {
         text-align: center;
         font-family: "Playpen Sans", cursive;
         font-optical-sizing: auto;
@@ -188,21 +188,21 @@ a:hover {
         margin-top: 1rem;
         
     }
-    .Start {
+    .startAboutMeBtn {
         display: flex;
         flex-direction: column;
         margin-top: 1rem;
         margin: 0 auto;
         margin-top: 1rem;
     }
-    .StartKnappArbetserfarenhet {
+    .StartWorkExperienceBtn {
         display: flex;
         flex-direction: column;
         margin-top: 1rem;
         margin: 0 auto;
         margin-top: 1rem;
     }
-    .ArbetslivserfarenheterSida {
+    .workExperiencePage {
         text-align: center;
         font-family: "Playpen Sans", cursive;
         font-optical-sizing: auto;
@@ -213,13 +213,13 @@ a:hover {
         flex-direction: column;
         margin-top: 2rem;
     }
-    .språk {
+    .language {
         width: 65%;
         margin: 0 auto;
         flex-direction: column;
         margin-top: 2rem;
     }
-    .paragrafVadJagKan {
+    .h3Header {
         text-align: center;
         margin-top: 2rem;
     }

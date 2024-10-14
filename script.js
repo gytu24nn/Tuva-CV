@@ -1,19 +1,19 @@
 /*Här deklarerar jag knapparna som jag skapat i HTML*/
-let BtnOmMig = document.getElementById("OmMig");
-let BtnArbetslivserfarenheter = document.getElementById("Arbetslivserfarenheter"); 
+let aboutMebtn = document.getElementById("aboutMeBtn");
+let workExperiencesBtn = document.getElementById("workExperiencesBtn"); 
 
 /*Här deklarerar jag sidorna Om mig och arbetslivserfarenher.*/
-const omMigPage = document.querySelector(".omMigSida");
-const arbetslivserfarenheterPage = document.querySelector(".ArbetslivserfarenheterSida");
+const aboutMePage = document.querySelector(".aboutMePage");
+const workExperiencePage = document.querySelector(".workExperiencePage");
 
 /*Här deklarerar jag tillbaka knappar.*/
-const startBtnOmMig = document.querySelector(".Start");
-const startBtnArbetserfarenhet = document.querySelector(".StartKnappArbetserfarenhet");
+const startAboutMeBtn = document.querySelector(".startAboutMeBtn");
+const StartWorkExperienceBtn = document.querySelector(".StartWorkExperienceBtn");
 
 /*Här deklarerar jag klockan paragrafen där det står vad jag kan för att jag ska kunna lägga till och 
 tabort hide så att de inte syns när användaren vill se om mig sidan tex och sen när man vill tillbaka så ska de synas igen. */
 let clock = document.querySelector(".clock");
-let paragrafVadJagKan = document.querySelector(".paragrafVadJagKan");
+let h3Header = document.querySelector(".h3Header");
 let githubRepos = document.getElementById("githubRepos")
 
 fetch("https://api.github.com/users/gytu24nn/repos")
@@ -43,59 +43,42 @@ fetch("db.json")
 })
 .then(function(json){
     json.forEach(work => {
-        let ul = document.getElementById("ul");
+        let listWork = document.getElementById("listWork");
         let li = document.createElement("li");
         li.innerHTML = `${work.workName}`;
 
-        ul.appendChild(li);
+        listWork.appendChild(li);
     })
 })
 
-/*Här får jag en bild att ändras till en annan bild med hjälp av att först deklarera en variabel från HTML med id.
-Sen använder jag mig av en switch sats som kontrollerar vilket bild det är och byter ut den till andra. */
-let imageElement = document.getElementById("bildpåmig");
-let source = "Tidning";
-imageElement.addEventListener("click", function swapImage() {
-    switch (source) {
-        case "Tidning":
-            imageElement.src = "/bilder/studentPicture.jpg";
-            source = "student";
-            break;
-        case "student":
-            imageElement.src = "/bilder/pictureNewPaper.jpg";
-            source = "Tidning";
-            break;
-    }
-
-})
 /*Detta är knapparna som jag använder för att visa det olika grejerna som ska visas och de som inte ska visas lägger koden till hide på.*/
-BtnOmMig.addEventListener("click", () => {
-    omMigPage.classList.remove("hide");
-    arbetslivserfarenheterPage.classList.add("hide");
+aboutMebtn.addEventListener("click", () => {
+    workExperiencePage.classList.add("hide");
+    aboutMePage.classList.remove("hide");
     clock.classList.add("hide");
-    paragrafVadJagKan.classList.add("hide");
+    h3Header.classList.add("hide");
     githubRepos.classList.add("hide");
     
 })
-BtnArbetslivserfarenheter.addEventListener("click", () => {
-    arbetslivserfarenheterPage.classList.remove("hide");
-    omMigPage.classList.add("hide");
+workExperiencesBtn.addEventListener("click", () => {
+    workExperiencePage.classList.remove("hide");
+    aboutMePage.classList.add("hide");
     clock.classList.add("hide");
-    paragrafVadJagKan.classList.add("hide");
+    h3Header.classList.add("hide");
     githubRepos.classList.add("hide");
 })
-startBtnOmMig.addEventListener("click", () => {
-    arbetslivserfarenheterPage.classList.add("hide");
-    omMigPage.classList.add("hide");
+startAboutMeBtn.addEventListener("click", () => {
+    workExperiencePage.classList.add("hide");
+    aboutMePage.classList.add("hide");
     clock.classList.remove("hide");
-    paragrafVadJagKan.classList.remove("hide");
+    h3Header.classList.remove("hide");
     githubRepos.classList.remove("hide");
 })
-startBtnArbetserfarenhet.addEventListener("click", () => {
-    arbetslivserfarenheterPage.classList.add("hide");
-    omMigPage.classList.add("hide");
+StartWorkExperienceBtn.addEventListener("click", () => {
+    workExperiencePage.classList.add("hide");
+    aboutMePage.classList.add("hide");
     clock.classList.remove("hide");
-    paragrafVadJagKan.classList.remove("hide");
+    h3Header.classList.remove("hide");
     githubRepos.classList.remove("hide");
 })
 
