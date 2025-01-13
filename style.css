@@ -4,8 +4,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-#Demo-video
-{margin-top: 1em;}
+
 /*Här skapar jag designen för header vilket jag väljer att lägga utanför @media för att den ska se likadan ut på alla skärmstorlekar.*/
 header {
     text-align: center;
@@ -104,6 +103,22 @@ a, a:visited{
 a:hover {
     color: #48a1f4;
 }
+.Demo-video
+{
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    text-align: center;
+ }
+
+.Demo-video iframe
+{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
 
 /*Här börjar designen för desktopen. */
 @media (min-width: 701px) {
@@ -112,6 +127,7 @@ a:hover {
     #btn {
         display: none;
     }
+    
     
     .aboutMePage {
         display: block;
@@ -170,6 +186,19 @@ a:hover {
         display: block;
         text-align: center;
         margin-top: 1rem;
+    }
+
+    .Demo-video
+    {
+        width: 100%;
+        margin: 0  auto;
+        text-align: center;
+    }
+
+    .Demo-video iframe
+    {
+        width: 100%;
+        height: auto;
     }
 
     button {
