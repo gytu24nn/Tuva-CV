@@ -1,0 +1,42 @@
+# Node.js dependencies
+node_modules/
+
+# npm logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+
+# Environment files
+.env
+
+# Log files
+*.log
+
+# IDE-specific files (Visual Studio, VSCode, JetBrains, etc.)
+.vscode/
+.idea/
+
+# Distribution and publishing
+publish/
+wwwroot/
+
+# Package manager lock files (if using Yarn or npm)
+package-lock.json
+yarn.lock
+
+# Other system files
+*.swp
+*.swo
+*.bak
+*.orig
