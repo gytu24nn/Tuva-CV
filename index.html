@@ -4,109 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tuva Gyllensten Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/6a8dff44b4.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/digital-7-mono" rel="stylesheet">
 </head>
 
-<body>
-    <!--Här skapar jag en header som ska visas hela tiden på hemsidan. I den står det mitt namn, vad jag pluggar och en ikon 
-    på en väska.-->
-    <header>
-        <h2>Tuva Gyllensten</h2>
-        <i class="fa-solid fa-briefcase"></i>
-        <h3>studying Webbutveckling.net <br> Campus Värnamo</h3>
+<body class="main-body">
+    <header class="header">
+        <div class="header-title" id="typewriterHeader">
+            <!-- Typwriter text goes here -->
+        </div>
     </header>
 
-    <!--I den här diven så skapar jag knapparna som jag sen CSS i designen för mindre gör jag så dessa knappar syns och
-    bara på de mindre skärmarna. -->
-    <div id="btn">
-        <button id="aboutMeBtn">About me</button>
-        <button id="workExperiencesBtn">Work experience</button>
+    <!-- Side Menu -->
+    <div class="sidefoot">
+        <div id="photo" class="photo-container">
+            <img class="photo" src="/bilder/TuvaGsmaller.jpg" alt="Picture of Tuva" />
+        </div>
+        <div class="contact-icons" id="ikonerkontakt">
+            <a class="icon-link" href="mailto:tuvagyllensten@gmail.com" target="_blank">
+                <i class="fa-solid fa-envelope fa-2x"></i>
+            </a>
+            <a class="icon-link" href="tel:+46725441299" target="_blank">
+                <i class="fa-solid fa-phone fa-2x"></i>
+            </a>
+            <a class="icon-link" href="https://github.com/gytu24nn" target="_blank">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a class="icon-link" href="https://www.linkedin.com/in/tuva-gyllensten-751a5833b/" target="_blank">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+        </div>
     </div>
 
-    <!--Denna main var jag tvungen att göra för få designen att fungera på desktopen för fick inte min om mig och 
-    arbetsliverfarenheter text att vara där jag ville annars.-->
-    <main>
-        <!--Här gör jag den första diven ska visa det jag lärt mig och den ska visas hela tiden om man inte användaren väljer att
-        visa något annat. Denna kommer jag sen fylla på med fler saker när jag lärt mig fler, men så länge valde jag att lägga
-        till min klocka jag skapat.-->
-        <div class="whatILearned">
-            <div class="clock">
-                <span id="hrs">00</span>
-                <span>:</span>
-                <span id="min">00</span>
-                <span>:</span>
-                <span id="sec">00</span>
-            </div>
-            <h3 class="h3Header">Github Repos: </h3>
-            <div id="githubRepos"></div>
-            
+    <!-- Main content -->
+    <div id="Main-content" class="main-content">
+        <div>
+            <h6 class="main-titels">About me</h6>
+            <div id="ContentInAboutMeDropDown" class="dropdown-content">
+                <p class="about-me-text">
+                    Hi, I’m Tuva Gyllensten, a junior developer passionate about both theory and practice.
+                    My journey began in spring 2024 with a Programming 1 course, which sparked my interest in coding.
+                    In August 2024, I started studying Web Development (.NET), a decision I haven't regretted.<br />
+                    <br>
 
-        </div>
-            <!--Här skapas nästa div inte syns från början i mobil sidan men den syns efter man tryckt på en knapp. För att 
-            det till att funka valde jag att använda mig av hide som jag aktivierar och stänger av med hjälp av javascript och
-            CSS. i denna div skrev jag ut om mig själv lade till en bild och om man trycker på den byts den ut till en annan. Sen har lade jag även 
-            till en liten ikon på ett löv som en liten detalj. Sen när man tryckt på om mig knappen på mobilen så kommer det upp en tillbaka knapp 
-            som tar en tillbaka till det som visades först.-->
-            <div class="aboutMePage hide">
-                <h3>About me:</h3>
-                <p> Hi, my name is Tuva Gyllensten, and in August 2024, I started studying Web Development (.NET). 
-                    I am a positive and cheerful person who is good at multitasking. Before I began studying, 
-                    I worked a summer job at a museum in Värnamo and helped update images and texts on Kockums Jernverk’s website. 
-                    In high school, I studied aesthetics (art and design), and from that education, 
-                    I’ve carried forward a lot of my creative side, which will be very useful in the field of web development.
+                    This website serves as my portfolio and CV, showcasing my skills in HTML, Tailwind CSS, and
+                    JavaScript. <br />
+                    Through my studies, I’ve worked in various environments, both independently and in teams.
+                    Before my education, I gained experience in service and web development, contributing to the Kockums
+                    Jernverk website. <br>
+                    <br>
+                    With a background in art and design from high school, I approach front-end development creatively.
+                    I’m positive, multitask well, and in my free time, I enjoy gaming, socializing, and exploring
+                    creative hobbies like baking and painting.
                 </p>
-                <i class="fa-solid fa-leaf fa-xl"></i> <br>
-                <img id="bildpåmig" src="bilder/pictureNewPaper.jpg" alt="Foto på Tuva">
-                <button class="startAboutMeBtn">Home</button>
-            </div>
-            <!--Här skapas den sista diven som också använder hide för att när man trycker på en knapp i mobil skärmen så ska de visas men 
-            när man är på en desktop skärm så visas de inga knappar och allt ska visas från början. I denna div skrivs det ut vad jag arbetat med innan 
-            och vad jag kan för språk. Även här skapas en tillbaka knapp som fungerar precis likadant som den andra i den förra diven. -->
-        <div class="workExperiencePage hide">
-            <h3>Work Experience:</h3>
-            <div id="listWork"></div> 
-            <div class="language">
-                <h3>Language:</h3>
-                <ul>
-                    <li class="li">Swedish</li>
-                    <li class="li">English</li>
+
+                <h6 class="section-title">Language I speak:</h6>
+                <ul class="list">
+                    <li>Svenska</li>
+                    <li>Engelska</li>
                 </ul>
 
-                
+                <h6 class="section-title">Programming languages I'm familiar with:</h6>
+                <ul class="list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Typescript</li>
+                    <li>tailwind CSS</li>
+                    <li>C#</li>
+                </ul>
             </div>
-            <div class="Demo-video">
-                <h3>Demo video för projekt Auktioner:</h3>
-                <iframe
-                    src="https://www.youtube.com/embed/ChOw6Tfucgs?controls=0" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
+
+            <div>
+                <h6 class="main-titels" id="githubProjectsTitle">My own projects on Github:</h6>
+                <div id="contentInRepoDropDown" class="dropdown-content">
+                    <div id="repoList" class="repo-list">
+                        <!-- Repo list will be populated by JavaScript -->
+                    </div>
+                </div>
             </div>
-            <button class="StartWorkExperienceBtn">Home</button>
         </div>
-    </main>
-    <!--Här skapar jag en footer som ska visas hela tiden samma som header och i denna finns mina kontakt uppgifter och github.
-    Om man trycker på ikonerna så kan man maila eller ringa. -->
-    <footer id="footer">
-        <h5>Contact:</h5>
-        <div class="contact">
-            <a href="mailto:tuvagyllensten@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-            <a id="phone" href="tel:+46725441299"><i class="fa-solid fa-phone"></i></a>
-            <a href="https://github.com/gytu24nn" target="_blank"><i class="fa-brands fa-github"></i></a>
-        </div>
-
-
-
-    </footer>
-
+    </div>
 </body>
-
-</html>
