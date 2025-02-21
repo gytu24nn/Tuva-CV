@@ -111,7 +111,6 @@ body {
     font-size: 1.125rem;
     line-height: 1.75rem;
     max-width: 70rem; 
-    margin: 0 auto; 
     padding: 0 1rem;
 }
 
@@ -169,6 +168,28 @@ body {
 .sidebar .list-group-item:hover {
     background-color: black;
     color: #63b3ed;
+}
+
+.video-container {
+    display: flex;
+    justify-Content: center;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #2d2d2d;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.2);
+    max-width: 600px;
+
+    margin-right: auto;
+}
+
+video-container iframe {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: 2px solid #63b3ed;
+    border-radius: 8px; 
 }
 
 /* Responsiveness */
