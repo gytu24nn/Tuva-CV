@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuva Gyllensten Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <script src="https://kit.fontawesome.com/6a8dff44b4.js" crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tuva Gyllensten Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+	<script src="https://kit.fontawesome.com/6a8dff44b4.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="main-body">
@@ -17,48 +17,53 @@
         </div>
     </header>
 
-    <!-- Side Menu -->
-    <div class="sidefoot">
-        <div id="photo" class="photo-container">
-            <img class="photo" src="/bilder/pictureNewPaper.jpg" alt="Picture of Tuva" />
-        </div>
-        <div class="contact-icons" id="ikonerkontakt">
-            <a class="icon-link" href="mailto:tuvagyllensten@gmail.com" target="_blank">
-                <i class="fa-solid fa-envelope fa-2x"></i>
-            </a>
-            <a class="icon-link" href="tel:+46725441299" target="_blank">
-                <i class="fa-solid fa-phone fa-2x"></i>
-            </a>
-            <a class="icon-link" href="https://github.com/gytu24nn" target="_blank">
-                <i class="fab fa-github fa-2x"></i>
-            </a>
-            <a class="icon-link" href="https://www.linkedin.com/in/tuva-gyllensten-751a5833b/" target="_blank">
-                <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-        </div>
-    </div>
+	<!-- Side Menu -->
+	<div class="sidefoot">
+		<div id="photo" class="photo-container">
+			<!-- 
+			För att den relativa sökvägen till bilden ska funka så måste du antingen ha med "." innan / eller att inte ha med /.
+			Annars pekar url via rooten i adressen, och letar efter bilden "utanför" ditt projekt.
+			-->
+			<img class="photo" src="./bilder/pictureNewPaper.jpg" alt="Picture of Tuva" />
+		</div>
+		<div class="contact-icons" id="ikonerkontakt">
+			<a class="icon-link" href="mailto:tuvagyllensten@gmail.com" target="_blank">
+				<i class="fa-solid fa-envelope fa-2x"></i>
+			</a>
+			<a class="icon-link" href="tel:+46725441299" target="_blank">
+				<i class="fa-solid fa-phone fa-2x"></i>
+			</a>
+			<a class="icon-link" href="https://github.com/gytu24nn" target="_blank">
+				<i class="fab fa-github fa-2x"></i>
+			</a>
+			<a class="icon-link" href="https://www.linkedin.com/in/tuva-gyllensten-751a5833b/" target="_blank">
+				<i class="fab fa-linkedin fa-2x"></i>
+			</a>
+		</div>
+	</div>
 
-    <!-- Main content -->
-    <div id="Main-content" class="main-content">
-        <div>
-            <h6 class="main-titels">About me</h6>
-            <div id="ContentInAboutMeDropDown" class="dropdown-content">
-                <p class="about-me-text">
-                    Hi, I’m Tuva Gyllensten, a junior developer passionate about both theory and practice.
-                    My journey began in spring 2024 with a Programming 1 course, which sparked my interest in coding.
-                    In August 2024, I started studying Web Development (.NET), a decision I haven't regretted.<br />
-                    <br>
+	<!-- Main content -->
+	<div id="Main-content" class="main-content">
+		<div>
+			<h6 class="main-titels">About me</h6>
+			<div id="ContentInAboutMeDropDown" class="dropdown-content">
+				<p class="about-me-text">
+					Hi, I’m Tuva Gyllensten, a junior developer passionate about both theory and practice.
+					My journey began in spring 2024 with a Programming 1 course, which sparked my interest in coding.
+					In August 2024, I started studying Web Development (.NET), a decision I haven't regretted.<br />
+					<br>
 
-                    This website serves as my portfolio and CV, showcasing my skills in HTML, Tailwind CSS, and
-                    JavaScript. <br />
-                    Through my studies, I’ve worked in various environments, both independently and in teams.
-                    Before my education, I gained experience in service and web development, contributing to the Kockums
-                    Jernverk website. <br>
-                    <br>
-                    With a background in art and design from high school, I approach front-end development creatively.
-                    I’m positive, multitask well, and in my free time, I enjoy gaming, socializing, and exploring
-                    creative hobbies like baking and painting.
-                </p>
+					This website serves as my portfolio and CV, showcasing my skills in HTML, Tailwind CSS, and
+					JavaScript. <br />
+					Through my studies, I’ve worked in various environments, both independently and in teams.
+					Before my education, I gained experience in service and web development, contributing to the Kockums
+					Jernverk website. <br>
+					<br>
+					With a background in art and design from high school, I approach front-end development creatively.
+					I’m positive, multitask well, and in my free time, I enjoy gaming, socializing, and exploring
+					creative hobbies like baking and painting.
+				</p>
+
 
                 <h6 class="section-title">Language I speak:</h6>
                 <ul class="list">
@@ -78,25 +83,25 @@
                     </li>
                 </ul>
 
-                <h6 class="section-title">Programming languages I'm familiar with:</h6>
-                <ul class="list">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Typescript</li>
-                    <li>tailwind CSS</li>
-                    <li>C#</li>
-                </ul>
-            </div>
+				<h6 class="section-title">Programming languages I'm familiar with:</h6>
+				<ul class="list">
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JavaScript</li>
+					<li>Typescript</li>
+					<li>tailwind CSS</li>
+					<li>C#</li>
+				</ul>
+			</div>
 
-            <div>
-                <h6 class="main-titels" id="githubProjectsTitle">My own projects on Github:</h6>
-                <div id="contentInRepoDropDown" class="dropdown-content">
-                    <div id="repoList" class="repo-list">
-                        <!-- Repo list will be populated by JavaScript -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+			<div>
+				<h6 class="main-titels" id="githubProjectsTitle">My own projects on Github:</h6>
+				<div id="contentInRepoDropDown" class="dropdown-content">
+					<div id="repoList" class="repo-list">
+						<!-- Repo list will be populated by JavaScript -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
