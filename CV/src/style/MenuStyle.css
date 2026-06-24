@@ -1,0 +1,53 @@
+.menu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: -1em;
+    justify-content: center;
+}
+
+.logoText {
+    writing-mode: sideways-lr;
+    font-family: "Cause", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 25px;
+}
+
+.socialLinks {
+    list-style: none;
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.socialLinks li a{
+    color: #B15DCD;
+}
+
+.socialLinks li a:hover {
+    color: #7796e3;
+}
+
+.followMeLine {
+    writing-mode: sideways-lr;
+    width: 1px;
+    background-color: #B15DCD;
+    height: 40px;
+    
+}
+
+.followMeText {
+    writing-mode: sideways-lr;
+    color: #B15DCD;
+}
+
+.DarkAndLightModeBtn {
+      
+}
+
