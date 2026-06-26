@@ -1,12 +1,16 @@
 .menu {
     position: fixed;
     left: 0;
-    right: 0;
+    top: 0;
+    width: 60px;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    padding: -1em;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1em;
+    z-index: 100;
+    border-right: 1px solid #D9D9D9;
 }
 
 .logoText {
@@ -15,39 +19,130 @@
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: bold;
-    font-size: 25px;
+    font-size: 22px;
+    margin: 0;
+}
+
+.middleSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4em;
 }
 
 .socialLinks {
     list-style: none;
-    font-size: 1.3em;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 0.5em;
 }
 
 .socialLinks li a{
     color: #B15DCD;
+    font-size: 1em;
 }
 
 .socialLinks li a:hover {
     color: #7796e3;
 }
 
+.followMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
 .followMeLine {
-    writing-mode: sideways-lr;
-    width: 1px;
+    width: 1.6px;
+    height: 50px;
     background-color: #B15DCD;
-    height: 40px;
-    
 }
 
 .followMeText {
     writing-mode: sideways-lr;
     color: #B15DCD;
+    font-size: 1em;
+    margin: 0;
 }
 
-.DarkAndLightModeBtn {
-      
+.MenuBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    flex-shrink: 0;
+    margin-bottom: 2em; 
 }
 
+.DarkAndLightModeBtn, 
+.MenuHamburgarBtn {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 0;
+}
+
+.DarkAndLightModeBtn:hover,
+.MenuHamburgarBtn:hover {
+    color: #B15DCD;
+}
+
+.slideMenu {
+    position: fixed;
+    left: 60px;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: #ffffff;
+    border-right: 1px solid #D9D9D9;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    padding-left: 2em;
+
+    transform: translateX(-400px);
+    transition: transform 0.5s ease;
+}
+
+.slideMenu.open {
+    transform: translateX(0);
+}
+
+.slideMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.slideMenu ul li a {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: "Cause", cursive;
+    font-weight: 600;
+    color: #000;
+    transition: color 0.2s;
+}
+
+.slideMenu ul li a:hover {
+    color: #B15DCD;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 300px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 98;
+}
+ 
