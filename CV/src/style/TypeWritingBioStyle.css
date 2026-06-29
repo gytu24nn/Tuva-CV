@@ -1,0 +1,52 @@
+.TypeWrittingBio {
+    
+}
+
+.HeaderDiv {
+    align-items: center;
+    justify-content:flex-start;
+
+
+    font-family:"Cause", cursive;
+    font-weight:700;
+    font-size:24px;
+    margin-bottom: -1.8em;
+    line-height: 1.1;
+}
+
+.HeaderWithColor {
+    color: #B15DCD;
+}
+
+.subTitle {
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 19px;
+    margin-top: 3rem;
+    
+}
+
+.Cursor {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink{
+
+0%,50%{
+opacity:1;
+}
+
+51%,100%{
+opacity:0;
+}
+
+}
+
+@keyframes colorFlash {
+    0% {color: transparent; text-shadow: none; }
+    50% {color:  #bb82cf; }
+    100% {color: #B15DCD; }
+}
+

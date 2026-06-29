@@ -1,9 +1,12 @@
+import MainPictureSideways from "../components/MainPictureSideways";
+import TypeWritingBio from "../components/TypeWritingBio";
 
 
 export default function HomePage() {
     return (
         <>
-            <h1>test</h1>
+            <MainPictureSideways />
+            <TypeWritingBio />
         </>
     )
 }
