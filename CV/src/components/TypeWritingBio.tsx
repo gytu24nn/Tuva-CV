@@ -13,7 +13,6 @@ const typeWritingTitles = [
 
 export default function TypeWritingBio() {
     const [titleIndex, setTitleIndex] = useState(0)
-    const [displayedText, setDisplayedText] = useState("")
     const [charIndex, setCharIndex] = useState(0)
     const [isDeleting, setIsDeleting] = useState(false)
     

@@ -1,5 +1,9 @@
 .TypeWrittingBio {
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 450px;
 }
 
 .HeaderDiv {
@@ -24,7 +28,7 @@
     font-weight: 400;
     font-style: normal;
     font-size: 19px;
-    margin-top: 3rem;
+    margin-top: 3.5rem;
     
 }
 
