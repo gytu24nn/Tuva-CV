@@ -1,0 +1,19 @@
+.hero {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.leftSide {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 4rem;
+    gap: 1em;
+}
+
+.rightSide {
+    width: 55%;
+}

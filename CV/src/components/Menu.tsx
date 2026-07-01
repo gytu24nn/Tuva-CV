@@ -37,7 +37,7 @@ export default function Menu() {
 
             <nav className={`slideMenu ${menuOpen ? 'open' : ''}`}>
                 <ul>
-                    <li><Link to="/" onClick={() => setMenuOpen(false)}>Hem</Link></li>                    <li></li>
+                    <li><Link to="/" onClick={() => setMenuOpen(false)}>Hem</Link></li>
                     <li><Link to="/projekt" onClick={() => setMenuOpen(false)}>Projekt</Link></li>
                     <li><Link to="/om-mig" onClick={() => setMenuOpen(false)}>Om mig</Link></li>
                     <li><Link to="/tech-stack" onClick={() => setMenuOpen(false)}>Tech stack</Link></li>
