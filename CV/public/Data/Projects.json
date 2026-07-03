@@ -1,0 +1,62 @@
+[
+    {
+        "title": "BookCompass",
+        "description": "Webbapp för bokälskare att upptäcka ny litteratur och organisera läslistan. Får rekommendationer på olika språk.",
+        "img": [
+
+        ], 
+        "link": "https://github.com/gytu24nn/BookCompass",
+        "featured": true,
+        "inProgress": true,
+        "tags": ["React", "C#", "Skola", "TypeScript", ".NET"],
+        "buildWith": ["React", "C#", "ASP .NET Core 9", "TypeScript", "Localstorage", "Vite"]
+    },
+    {
+        "title": "PixelHaven",
+        "description": "En spinoff på BookCompass men för gamers. Spara och upptäck spel på en snygg plattform.",
+        "img": [
+
+        ], 
+        "link": "https://github.com/gytu24nn/pixelhaven",
+        "featured": true,
+        "inProgress": true,
+        "tags": ["React", "C#", "Privata", "TypeScript", ".NET"],
+        "buildWith": ["React", "TypeScript", "ASP .NET Core 8", "C#", "MySQL", "JSON fallback", "Localstorage", "Vite"]
+    },
+    {
+        "title": "Portfolio/CV",
+        "description": "Mitt personliga porfolio/CV som webbsida där jag bland annat visar mina projekt och mycket annat. ",
+        "img": [
+
+        ], 
+        "link": "https://github.com/gytu24nn/Tuva-CV",
+        "featured": true,
+        "inProgress": true,
+        "tags": ["React", "C#", "Privata", ".NET"],
+        "buildWith": ["json", "React", "TypeScript", "Vite"]
+    },
+    {
+        "title": "InnoviaHub",
+        "description": "Fullstack kontorsbokningsapp byggt tillsammans med andra. Admin-panel, realtids-synk med SignalR, och lite AI-smarts för boknings-tips.",
+        "img": [
+
+        ], 
+        "link": "https://github.com/gytu24nn/InnoviaHubTuva",
+        "featured": true,
+        "inProgress": false,
+        "tags": ["React", "C#", "Skola", "TypeScript", ".NET"],
+        "buildWith": ["ASP .NET Core 8", "SQL Server", "React", "TypeScript", "Vite"]
+    },
+    {
+        "title": "Spa med spa",
+        "description": "Bokningsapp för spabehandlingar med React Calendar och responsiv design. Fokus på en smooth användarupplevelse.",
+        "img": [
+
+        ], 
+        "link": "https://github.com/gytu24nn/Spa-med-SPA",
+        "featured": true,
+        "inProgress": false,
+        "tags": ["React", "Skola", "TypeScript"],
+        "buildWith": ["React", "TypeScript", "Vite"]
+    }
+]

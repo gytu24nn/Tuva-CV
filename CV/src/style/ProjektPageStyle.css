@@ -1,0 +1,222 @@
+.projektContainer {
+    padding: 2rem 4rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.projektHeader {
+    margin-bottom: 2rem;
+}
+
+.projektHeader h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #000;
+}
+
+.projektHeader h1 span {
+    color: #c77dff;
+}
+
+.projektHeader p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.filterButtons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.filterBtn {
+    padding: 0.6rem 1.2rem;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #000;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.filterBtn:hover {
+    border-color: #c77dff;
+    color: #c77dff;
+}
+
+.filterBtn.active {
+    background: #c77dff;
+    border-color: #c77dff;
+    color: #fff;
+}
+
+.projektGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 2rem;
+}
+
+.projectCard {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projectCard:hover {
+    border-color: #999;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.projectCardContent {
+    display: flex;
+    gap: 1.5rem;
+    flex: 1;
+    padding: 1.5rem;
+}
+
+.projectImage {
+    flex-shrink: 0;
+    width: 180px;
+    height: 140px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #f0f0f0;
+}
+
+.projectImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagePlaceholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.projectInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projectTitleContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.projectInfo h3 {
+    font-size: 1.3rem;
+    margin: 0;
+    color: #000;
+    font-weight: 600;
+}
+
+.inProgressBadge {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    background: #c77dff;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.projectDescription {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.projectTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.35rem 0.7rem;
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.tag:hover {
+    border-color: #c77dff;
+    color: #c77dff;
+}
+
+.projectLink {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    color: #c77dff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.projectLink:hover {
+    color: #b55ff3;
+    transform: scale(1.2);
+}
+
+.noProjects {
+    text-align: center;
+    padding: 2rem;
+    color: #999;
+}
+
+@media (max-width: 768px) {
+    .projektContainer {
+        padding: 1.5rem;
+    }
+
+    .projektHeader h1 {
+        font-size: 2rem;
+    }
+
+    .projektGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .projectCardContent {
+        flex-direction: column;
+    }
+
+    .projectImage {
+        width: 100%;
+        height: 200px;
+    }
+}
