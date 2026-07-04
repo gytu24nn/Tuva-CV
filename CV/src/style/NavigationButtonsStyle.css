@@ -30,7 +30,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: #a259e6;
+    background: #B15DCD;
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.5s ease;

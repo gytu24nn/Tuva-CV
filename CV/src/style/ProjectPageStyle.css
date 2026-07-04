@@ -1,0 +1,227 @@
+.projektContainer {
+    padding: 2rem 4rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.projektHeader {
+    margin-bottom: 2rem;
+}
+
+.projektHeader h1 {
+    font-family:"Cause", cursive;
+    font-weight:700;
+    font-size:30px;
+    margin-bottom: 0.5em;
+    color: #000;
+}
+
+.projektHeader h1 span {
+    color: #B15DCD;
+}
+
+.projektHeader p {
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+}
+
+.filterBtn {
+    padding: 0.6rem 1.6rem;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-size: 1em;
+    font-family: "Cause", cursive;
+    font-weight: 600;
+    color: #000;
+    margin-right: 1rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.5s ease;
+}
+
+.filterBtn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #B15DCD;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+    z-index: -1;
+    border-radius: 25px;
+}
+
+.filterBtn:hover {
+    color: #fff;
+}
+
+.filterBtn:hover::before {
+    transform: scaleX(1);
+}
+
+.filterBtn.active {
+    background: #B15DCD;
+    color: #fff;
+}
+
+.projektGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 2rem;
+    padding-top: 1.5rem;
+}
+
+.projectCard {
+    background: #fff;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+.projectCard:hover {
+    border-color: #B15DCD;
+}
+
+.projectCardContent {
+    display: flex;
+    gap: 1.5rem;
+    flex: 1;
+    padding: 1.5rem;
+}
+
+.projectImage {
+    flex-shrink: 0;
+    width: 180px;
+    height: 140px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #f0f0f0;
+}
+
+.projectImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagePlaceholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 0.9rem;
+    font-family:"Cause", cursive;
+    font-weight:700;
+}
+
+.projectInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projectTitleContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-family:"Cause", cursive;
+    font-weight:700;
+}
+
+.projectInfo h3 {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.inProgressBadge {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    background: #B15DCD;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-family:"Cause", cursive;
+    font-weight:700;
+    white-space: nowrap;
+    
+}
+
+.projectDescription {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.projectBuildWith {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.buildWith {
+    display: inline-block;
+    padding: 0.35rem 0.7rem;
+    background: #B15DCD;
+    color: #fff;
+    border: 1px solid #B15DCD;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-family:"Cause", cursive;
+    font-weight:700;
+    font-style: normal;
+}
+
+.projectLink {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    bottom: 1rem;
+    right: 1rem;
+    background: transparent;
+    color: #B15DCD;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.5 ease;
+}
+
+.noProjects {
+    text-align: center;
+    padding: 2rem;
+}
+
+@media (max-width: 780px) {
+    .projektContainer {
+        padding: 1.5rem;
+    }
+
+    .projektHeader h1 {
+        font-size: 2rem;
+    }
+
+    .projektGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .projectCardContent {
+        flex-direction: column;
+    }
+
+    .projectImage {
+        width: 100%;
+        height: 200px;
+    }
+}
