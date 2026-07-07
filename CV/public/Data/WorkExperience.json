@@ -1,0 +1,30 @@
+[
+    {
+        "period": "Nov 2025 - Maj 2026",
+        "title": "Systemutvecklare | Webbutvecklare",
+        "employer": "Netmine AB",
+        "location": "Värnamo",
+        "description": "Arbetade i utvecklingsteam med frontend- och backendutveckling: nyutveckling, support och felsökning av kundrapporterade ärenden, buggfixar och refaktorering. Integrerade också Power BI i ett internt projekt i samband med mitt examensarbete."
+    },
+    {
+        "period": "Maj 2024 - Aug 2024",
+        "title": "Sommarjobb - Webbutvecklare (hjälpte till med deras webbsida)",
+        "employer": "Kockums Jernverk ",
+        "location": "Anderstrop (Arbetade hemifrån)",
+        "description": "Medverkade i arbete med företagets webbplats och digitala arbetsuppgifter."
+    },
+    {
+        "period": "Maj 2022 - Aug 2022",
+        "title": "Sommarjobb - Kundservice",
+        "employer": "Vandalorum",
+        "location": "Värnamo",
+        "description": "Arbetade med kundserivce och kassahantering"
+    },
+    {
+        "period": "Maj 2021 - Aug 2021",
+        "title": "Sommarjobb - Kundservice",
+        "employer": "Vandalorum",
+        "location": "Värnamo",
+        "description":"Arbetade med kundserivce och kassahantering"
+    }
+]

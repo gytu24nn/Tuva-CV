@@ -1,0 +1,26 @@
+[
+    {
+        "period": "Aug 2024 - Maj 2026",
+        "title": "Webbutveckling .NET",
+        "school": "Campus Värnamo",
+        "type": "Yrkeshögskola",
+        "description": "Tvåårig YH-utbildning med fokus på fullstackutveckling inom .NET. Inkluderar databaser, agila metoder och 5 månaders LIA-praktik i verklig utvecklingsmiljö.",
+        "modality": "Distans" 
+    }, 
+    {
+        "period": "Maj 2024",
+        "title": "Programmering 1", 
+        "school": "Komvux Värnamo",
+        "type": "Fristående kurs",
+        "description": "Introduktion till programmering med C# innehåller bland annat variabler, loopar, metoder och objektorienterade grundprinciper.",
+        "modality": "Distans"
+    }, 
+    {
+        "period": "Aug 2020 - Maj 2023",
+        "title": "Estetiska programmet",
+        "school": "Gislaveds Gymnasium",
+        "type": "Gymnasium",
+        "description": "Intriktning bild och form, med tillval för kurser i Indesign, Photoshop och Illustator.",
+        "modality": "Platsbunden"
+    }
+]
